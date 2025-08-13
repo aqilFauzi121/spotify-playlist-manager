@@ -11,7 +11,7 @@ A small desktop app (Tkinter) and library to create/update Spotify playlists aut
 - Unit tests with pytest
 
 ## Demo / Screenshots
-Add screenshots or a short GIF here showing the GUI and operations.
+
 
 ## Quickstart
 1. Clone the repo and enter the project directory:
