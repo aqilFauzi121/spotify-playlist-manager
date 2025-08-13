@@ -1,0 +1,4 @@
+# === FILE: requirements.txt ===
+# Minimal dependencies for the project
+spotipy>=2.22.0
+python-dotenv>=1.0.0
