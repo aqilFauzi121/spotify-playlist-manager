@@ -23,8 +23,7 @@ A small desktop app (Tkinter) and library to create/update Spotify playlists aut
 ![Quick demo](assets/gifs/demo.gif)
 *Short demo showing authentication → search → add.*
 
-
-[Download full demo video (MP4)](https://github.com/aqilFauzi121/spotify-playlist-manager/releases/latest/download/demo.mp4)
+[Download full demo video (MP4)]((https://github.com/aqilFauzi121/spotify-playlist-manager/releases/tag/v0.1.0)
 
 ## Quickstart
 1. Clone the repo and enter the project directory:
