@@ -60,28 +60,28 @@ python main.py
 ```
 Click Authenticate and follow the browser flow, then use the GUI to create/update playlists.
 
-Headless example
+## Headless example
 A small headless example is available in main.py that demonstrates finding/creating a playlist and adding tracks programmatically.
 ```bash
 python main.py
 ```
 
-Running tests
+## Running tests
 Unit tests use pytest and are designed to run offline using mocks for the Spotify client.
 ```bash
 pip install pytest
 pytest -q
 ```
 
-Development & Staging
+## Development & Staging
 Break changes into small commits. Suggested staged plan is in DEVELOPMENT.md (or see the repo issues). Use branches and PRs for each feature:
 feat/core — Spotify wrapper & playlist manager
 feat/gui — initial GUI
 feat/gui-progress — add progress bars
 chore/tests — add tests & CI
 
-Contributing
+## Contributing
 Contributions welcome. Please open an issue first if you plan a larger change.
 
-License
+## License
 This project is licensed under the MIT License — see the LICENSE file for details.
