@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -23,5 +25,23 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
-      - name: Run tests
-        run: pytest -q
+      - name: Debug: list repo files and sys.path
+        run: |
+          python - <<'PY'
+          import os, sys
+          from pathlib import Path
+          print("CWD:", os.getcwd())
+          print("Top-level files:")
+          for p in sorted(Path('.').iterdir()):
+              print(" -", p)
+          print("\nFirst 8 sys.path entries:")
+          for i, s in enumerate(sys.path[:8]):
+              print(i, s)
+          PY
+
+      - name: Run tests (set PYTHONPATH to repo root)
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          echo "PYTHONPATH=$PYTHONPATH"
+          pytest -q
