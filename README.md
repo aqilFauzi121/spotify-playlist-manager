@@ -11,7 +11,19 @@ A small desktop app (Tkinter) and library to create/update Spotify playlists aut
 - Unit tests with pytest
 
 ## Demo / Screenshots
+![App ready](assets/screenshots/app-ready.png)
+*Main window before authentication — enter playlist name & genre.*
 
+![Auth consent](assets/screenshots/auth-consent.png)
+*Spotify OAuth consent screen shown in the browser (scopes requested).*
+
+![App success](assets/screenshots/app-succes.png)
+*After run: track preview populated and status shows tracks added; playlist link available.*
+
+![Quick demo](assets/gifs/demo.gif)
+*Short demo showing authentication → search → add.*
+
+[Download full demo video (MP4)](https://github.com/aqilFauzi121/spotify-playlist-manager/releases/latest/download/demo.mp4)
 
 ## Quickstart
 1. Clone the repo and enter the project directory:
